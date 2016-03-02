@@ -99,6 +99,12 @@ typedef struct RMW_PUBLIC_TYPE rmw_guard_conditions_t
   void ** guard_conditions;
 } rmw_guard_conditions_t;
 
+typedef struct RMW_PUBLIC_TYPE rmw_nodes_t
+{
+  size_t node_count;
+  void ** nodes;
+} rmw_nodes_t;
+
 typedef struct RMW_PUBLIC_TYPE rmw_waitset_t
 {
   const char * implementation_identifier;
