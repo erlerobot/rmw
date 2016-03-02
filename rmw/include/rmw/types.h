@@ -35,6 +35,12 @@ typedef int rmw_ret_t;
 // implementation. It may need to be increased in the future.
 #define RMW_GID_STORAGE_SIZE 24
 
+typedef struct RMW_PUBLIC_TYPE rmw_strings_t
+{
+  size_t names_count;
+  char ** nodes_name;
+} rmw_strings_t;
+
 typedef struct RMW_PUBLIC_TYPE rmw_node_t
 {
   const char * implementation_identifier;
