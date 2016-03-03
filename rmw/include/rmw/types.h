@@ -37,8 +37,8 @@ typedef int rmw_ret_t;
 
 typedef struct RMW_PUBLIC_TYPE rmw_strings_t
 {
-  size_t names_count;
-  char ** nodes_name;
+  size_t strings_count;
+  char ** strings;
 } rmw_strings_t;
 
 typedef struct RMW_PUBLIC_TYPE rmw_node_t
@@ -104,12 +104,6 @@ typedef struct RMW_PUBLIC_TYPE rmw_guard_conditions_t
   size_t guard_condition_count;
   void ** guard_conditions;
 } rmw_guard_conditions_t;
-
-typedef struct RMW_PUBLIC_TYPE rmw_nodes_t
-{
-  size_t node_count;
-  void ** nodes;
-} rmw_nodes_t;
 
 typedef struct RMW_PUBLIC_TYPE rmw_waitset_t
 {
